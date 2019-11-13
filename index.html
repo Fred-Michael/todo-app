@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>TODO APP</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+<body>
+   <div class="container my-5">
+      <div class="row mx-auto">
+         <div class="col-12 text-center text-light my-4 mb-5">
+            <h1 class="mb-5">Todo List</h1>
+            <form class="search">
+               <input type="text" class="form-control m-auto" placeholder="Search todos...">
+            </form>
+         </div>
+
+         <div class="col-12 mb-5">
+            <ul class="list-group todos mx-auto text-light">
+               <!-- Dynamic list gets added here based on user input -->
+            </ul>
+         </div>
+
+         <div class="col-12 mt-2">
+            <form class="add text-center">
+               <label class="text-light">Add a new todo:</label>
+               <input type="text" class="form-control m-auto" name="add">
+            </form>
+         </div>
+
+         <div id="picker">
+            <select name="background" id="bg-color" class="form-control">
+               <option value="#352f5b">Default</option>
+               <option value="teal">Teal</option>
+               <option value="brown">Brown</option>
+               <option value="green">Green</option>
+            </select>
+         </div>
+      </div>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
